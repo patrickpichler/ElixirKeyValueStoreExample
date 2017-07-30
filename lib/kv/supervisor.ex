@@ -7,9 +7,10 @@ defmodule KV.Supervisor do
 
   def init(:ok) do
     children = [
-      worker(KV.Registry, [KV.Registry])
-    ]    
+      {KV.Registry, name: KV.Registry},
+      KV.BucketSupervisor
+  ]
 
-    supervise(children, strategy: :one_for_one)
+    Supervisor.init(children, strategy: :one_for_one)
   end
 end

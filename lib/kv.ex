@@ -4,7 +4,7 @@ defmodule KV do
   @moduledoc """
   Documentation for KV.
   """
-  def start(start_type, start_args) do
+  def start(_, _) do
     KV.Supervisor.start_link    
   end
 
