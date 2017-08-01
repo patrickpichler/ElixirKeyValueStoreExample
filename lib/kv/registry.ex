@@ -8,7 +8,7 @@ defmodule KV.Registry do
   Starts the registry
   """
   def start_link(_) do
-    GenServer.start_link(__MODULE__, :ok)    
+    GenServer.start_link(__MODULE__, :ok, name: KV.Registry)    
   end
 
   @doc """
