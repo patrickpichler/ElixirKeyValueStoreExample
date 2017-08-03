@@ -26,7 +26,7 @@ defmodule KVServer.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:kv, in_umprella: true}
+      {:kv, in_umbrella: true}
     ]
   end
 end
