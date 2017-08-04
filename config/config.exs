@@ -15,3 +15,8 @@ import_config "../apps/*/config/config.exs"
 #       level: :info,
 #       format: "$date $time [$level] $metadata$message\n",
 #       metadata: [:user_id]
+
+# Replace computer-name with your local mnachine nodes
+config :kv, :routing_table,
+        [{?a..?m, :"foo@Patrick-PC"},
+         {?n..?z, :"bar@Patrick-PC"}]
