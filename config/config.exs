@@ -20,3 +20,5 @@ import_config "../apps/*/config/config.exs"
 config :kv, :routing_table,
         [{?a..?m, :"foo@Patrick-PC"},
          {?n..?z, :"bar@Patrick-PC"}]
+
+config :kv_server, :server_port, 5050         
